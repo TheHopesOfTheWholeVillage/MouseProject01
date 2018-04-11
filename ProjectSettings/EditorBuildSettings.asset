@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Sence/MR\u9F20\u6807.unity"
     guid: a56cab88d620bfb449edc5695a499d2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sence/ssNew.unity
     guid: 97ea28bcc4259ac4ba97c089a807f503
+  - enabled: 1
+    path: Assets/Sence/ZJNew.unity
+    guid: 516b5e4f1b7d00a4e9219ee5d138eae3
