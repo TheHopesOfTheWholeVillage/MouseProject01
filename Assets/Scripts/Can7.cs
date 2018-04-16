@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Can7 : MonoBehaviour {
+
+    [SerializeField]
+    GameObject[] canNext;
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void OverBase()
+    {
+        canNext[0].SetActive(false);
+       
+    }
+}

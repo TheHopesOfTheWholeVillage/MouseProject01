@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour {
     [SerializeField]
+    GameObject[] CanNest;
+    [SerializeField]
+    GameObject[] menuss;
+    [SerializeField]
     private GameObject[] images;
     [SerializeField]
     private int level;
@@ -45,29 +49,27 @@ public class Manager : MonoBehaviour {
     }
     public void NextArr()
     {
-        Debug.Log("1111111111");
+       
         if (level == 1)
         {
+            
             fzl.SetActive(false);
             images[0].SetActive(true);
             level++;
         }
         else if (level == 2)
         {
+            
             images[0].SetActive(false);
             images[1].SetActive(true);
             level++;
         }
         else if (level==3)
         {
+            menuss[3].SetActive(true);
+            menuss[1].SetActive(false);
             images[1].SetActive(false);
             images[2].SetActive(true);
-            level++;
-        }
-        else if(level==4)
-        {
-            images[2].SetActive(false);
-            images[3].SetActive(true);
             level++;
         }
     }
@@ -99,20 +101,16 @@ public class Manager : MonoBehaviour {
         }
         else if(level==4)
         {
-
+            menuss[3].SetActive(false);
+            menuss[1].SetActive(true);
             images[1].SetActive(true);
             images[2].SetActive(false);
-            level--;
-        }
-        else if (level == 5)
-        {
-            images[2].SetActive(true);
-            images[3].SetActive(false);
             level--;
         }
     }
     public void SkipArr()
     {
-
+        CanNest[0].SetActive(false);
+        CanNest[1].SetActive(true);
     }
 }
