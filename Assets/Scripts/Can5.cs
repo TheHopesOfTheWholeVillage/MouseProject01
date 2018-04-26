@@ -22,4 +22,9 @@ public class Can5 : MonoBehaviour {
         canNext[0].SetActive(false);
         canNext[1].SetActive(true);
     }
+    public void NewBase()
+    {
+        canNext[0].SetActive(false);
+        canNext[2].SetActive(true);
+    }
 }

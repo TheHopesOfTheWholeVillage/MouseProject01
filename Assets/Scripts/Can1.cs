@@ -25,6 +25,21 @@ public class Can1 : MonoBehaviour {
 	void Update () {
 		
 	}
+    public void NewBase()
+    {
+        images[0].SetActive(false);
+        images[1].SetActive(false);
+        jian.SetActive(true);
+        tzq.SetActive(false);
+        Munes[0].SetActive(false);
+        Munes[1].SetActive(false);
+        Munes[2].SetActive(false);
+        Munes[3].SetActive(false);
+        level = 0;
+       
+        CanNext[2].SetActive(true);
+        CanNext[0].SetActive(false);
+    }
     public void Jians()
     {
         jian.SetActive(false);

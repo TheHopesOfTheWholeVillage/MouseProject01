@@ -17,8 +17,6 @@ public class Manager : MonoBehaviour {
     private GameObject[] objs;
     [SerializeField]
     private GameObject fzl;
-    [SerializeField]
-    private GameObject tzp;
     Animation animafzl;
 	// Use this for initialization
 	void Start () {
@@ -112,5 +110,25 @@ public class Manager : MonoBehaviour {
     {
         CanNest[0].SetActive(false);
         CanNest[1].SetActive(true);
+    }
+    public void NewBase()
+    {
+        for (int i = 0; i < objs.Length; i++)
+        {
+            objs[i].SetActive(true);
+        }
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].SetActive(false);
+        }
+        menuss[0].SetActive(true);
+        menuss[1].SetActive(true);
+        menuss[2].SetActive(true);
+        menuss[3].SetActive(false);
+        menus.SetActive(false);
+        fzl.SetActive(false);
+        level = 0;
+        CanNest[0].SetActive(false);
+        CanNest[2].SetActive(true);
     }
 }

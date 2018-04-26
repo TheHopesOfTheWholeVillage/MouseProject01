@@ -94,4 +94,21 @@ public class Can3 : MonoBehaviour {
         CanNext[0].SetActive(false);
         CanNext[1].SetActive(true);
     }
+    public void NewBase()
+    {
+        
+        Images[0].SetActive(true);
+        Images[1].SetActive(false);
+        Images[2].SetActive(false);
+        Images[3].SetActive(false);
+        Images[4].SetActive(false);
+        Images[5].SetActive(false);
+        Botons[0].SetActive(true);
+        Botons[1].SetActive(true);
+        Botons[2].SetActive(false);
+        Botons[3].SetActive(false);
+        leven = 0;
+        CanNext[0].SetActive(false);
+        CanNext[2].SetActive(true);
+    }
 }
